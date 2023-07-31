@@ -1,0 +1,481 @@
+/*CSSheadMARGIN*/
+/*dovageiste's etherBox Designer CSS API & Library ================================================*/
+
+/* general CSS Reset */
+html, 
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+
+/* Elemental Controls ========================================================================================== 
+These are CSS parameters, by ID's and Classes, for all major HTML elements, grouped together by context. The list starts with editable abstract elements such as the 'body', to the 'etherBox' which is the invisible bed of the whole website, to its direct descendant, the 'metaBox', down to the alphaBox class of row-oriented major flexboxes, and so on. */
+
+    body {
+        background-image: url('image/lorisha-buhler-ferrara-F-67aIbPOAc-unsplash.jpg');
+        background-size: 120%;
+        background-position-x: 60%;
+        background-position-y: 72%;
+            }*, body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-align: center;
+                justify-content: center;
+            }body::-webkit-scrollbar {
+                display: none;
+            }
+
+    #theetherBox {
+        display: flex;
+        min-height: 100dvh;
+        max-height: 100dvh;
+    }
+
+                    #themetaBox {
+                        height: 100dvh;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: rgba(0, 0, 0, 0.350);
+                        flex-grow: 1;           
+                        }
+                            .alphaBox {
+                                display: flex;
+                                flex-wrap: row wrap;
+                                padding: .5%;
+                                margin: .5em;
+                            }
+
+                            .kinderBox {
+                                display:flexbox;
+                                flex-direction: column nowrap;
+                                margin: 0 5px 0 5px;
+                                padding: .5%;
+
+                            }
+                                    .vocabox {
+                                        display:block;
+                                    }        
+                                            #hatBox    {
+                                                    display: flex;
+                                                    flex: 2 1.1;
+                                                    background-color: rgba(255, 255, 240, 0.8);
+                                                    border-radius: 0px;
+                                                    overflow: clip;
+                                                    outline: 1em solid ivory;
+                                                    
+                                                            } #peaLogo {
+                                                                display: none;
+                                                                width: 20%;
+                                                                align-items: flex-start;
+                                                            }
+                                                            
+                                                            #titleRibbon {
+                                                                display: flex;
+                                                                flex: 2 .5;
+                                                                justify-content: flex;
+                                                                background-color: rgba(6, 249, 196, 0.267);
+                                                                border-radius: 8rem;
+                                                                box-shadow: 30rem -0.5rem 0rem 35rem ivory;
+                                                                overflow: clip;
+                                                            } 
+                                                            #navaBar {
+                                                                margin-top: 1%;
+                                                                flex: 1.1 1.7;
+                                                                display: grid;
+                                                                grid-template-columns: repeat(5, 1fr);
+                                                                grid-template-rows: repeat(2, 1fr);
+                                                                grid-column-gap: 0em;
+                                                                grid-row-gap: 0em;
+                                                                border-radius: 8em;
+                                                                overflow: clip;
+                                                                justify-items: center;
+                                                                align-items:center;
+                                                                background-color: transparent;
+                                                                }
+                                                                .svgRing{
+                                                                    outline: .3em solid burlywood;
+                                                                    border-radius: 50%;
+                                                                    padding: .4em;
+                                                                    align-items: center;
+                                                                    justify-items: center;
+                                                                    overflow:visible;
+                                                                }
+
+                                                    #torsoBox {
+                                                            display: flex;
+                                                            flex: 8 0;
+                                                            overflow: clip;
+                                                            outline: 1em solid ivory;
+                                                            }#theConsole {
+                                                                flex: 2 0;
+                                                                background-color: rgba(4, 84, 37, 0.590);
+                                                                overflow: clip;
+                                                                outline: 1.7em solid ivory;
+                                                                /* box-shadow: -1.63em 0em 1px 1.25em ivory; */
+                                                                border-radius: 20px;
+                                                                margin: 0 1.5em 0em 0em;
+                                                            }
+                                                            #dominoBox {
+                                                                flex: 9 1;
+                                                                background-color: rgba(192, 0, 0, 0.350);
+                                                                overflow: clip;
+                                                                outline: 1.5em solid ivory;
+                                                                border-radius: 20px;
+                                                            }                                                      
+                                                            #copyBox {
+                                                                flex: 3 0;
+                                                                background-color: rgba(218, 211, 7, 0.350);
+                                                                overflow: clip;
+                                                                outline: 1.8em solid ivory;
+                                                                margin: 0 0em 0em 1.5em;
+                                                                border-radius: 20px;
+                                                            }
+                                                    #theunderBox {
+                                                        display: flex;
+                                                        flex: .8 1;
+                                                        overflow: clip;
+                                                        background-color: rgba(12, 4, 254, 0.350);
+                                                        justify-content: center;
+                                                        align-content: start;
+                                                        outline: 1.8em solid ivory;
+                                                        border-radius: 20px;
+                                                    }
+                                                                                        #ourLegalities {
+                                                                                            justify-content: bottom;
+                                                                                            align-content: bottom;
+                                                                                        }
+
+/*Typography & Type Color Standards==========================================================================================*/
+h1 {
+    display: flex;
+    font-family: 'Monoton', 'fantasy';
+    font-weight: 500;
+    font-size: 5.2em;
+    align-self: center;
+    justify-self: center;
+        } #titleItself {
+            color: ivory;
+        }
+
+h2 {
+    display: inherit;
+    font-weight: 500;
+    font-family: 'Monoton', 'fantasy';
+    font-size: 3.5em;
+    align-self: center;
+    justify-self: center;
+}
+
+h3 {
+    display: inherit;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    align-self: center;
+    justify-self: center;
+}
+        #navaBar > h3 {
+            display: inherit;
+            font-size: 1em;
+            font-weight: 700;
+            font-family: 'Montserrat';
+            align-self: center;
+            justify-self: center;
+            color: burlywood;
+            background: ivory;
+            border-radius: 25px;
+            margin-top: -20%;
+        }
+
+p1 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 2.5em;
+    color: rgba(6 249 196 / .5);
+    padding: 1.2em;
+    align-self: center;
+    justify-self: center;
+}
+
+p2 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.3em;
+    color: rgba(41, 215, 178, 0.627);
+    padding: 1em;
+    margin-top: 0 em;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Custom Theme Colors ===========================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Standard CSS Utilities============================================================================*/
+                
+        /*BUTTONS*===================================================================================*/
+                            .button-rounded-hover {
+                                border: 0;
+                                border-radius: 5000px;
+                                padding: 0.3rem 2rem;
+                                max-height:50%;
+                                text-transform: capitalize;
+                                position: relative;
+                                overflow: hidden;
+                                font-size: 1.2em;
+                                letter-spacing: 2px;
+                                transition: all 0.35s ease;
+                                -webkit-transform: translateZ(0);
+                                        transform: translateZ(0);
+                            }
+                            
+                            .button-rounded-hover:before {
+                                opacity: 0;
+                                content: "";
+                                position: absolute;
+                                top: 0px;
+                                bottom: 0px;
+                                left: 0px;
+                                right: 0px;
+                                border-radius: inherit;
+                                background-color: ivory;
+                                transition: all 0.3s;
+                                -webkit-transform: translateX(-100%);
+                                    -ms-transform: translateX(-100%);
+                                        transform: translateX(-100%);
+                            }
+                            
+                            .button-rounded-hover:after {
+                                position: absolute;
+                                top: 0px;
+                                bottom: 0px;
+                                left: 0px;
+                                right: 0px;                             
+                                content: '';
+                                border-radius: inherit;
+                            }
+                            
+                            .button-rounded-hover:hover,
+                            .button-rounded-hover:focus {
+                                background-color: rgba(0, 0, 0, 0.581);
+                            }
+                            
+                            .button-rounded-hover:hover:before,
+                            .button-rounded-hover:focus:before {
+                                -webkit-transform: translateX(0%);
+                                    -ms-transform: translateX(0%);
+                                        transform: translateX(0%);
+                                opacity: 0.25;
+                            }
+
+
+
+
+    /* Media Queries*/
+    @media only screen and (max-width: 75rem) {
+
+         html, 
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+         body {
+         background-image: url('image/richard-clark-d1X3oqU5bOk-unsplash.jpg'); 
+         background-size:102%;
+            background-position: -1rem 15rem;
+        }
+
+        #theetherBox {
+            display: flexbox;
+            flex-direction: column nowrap;
+            min-height: 100dvh;
+            max-height: 100dvh;
+        }
+    
+                        #themetaBox {
+                            height: 100dvh;
+                            display: flexbox;
+                            flex-direction: column nowrap;
+                            background-color: rgba(195, 129, 7, 0.444);
+                            flex-grow: 1;           
+                            }
+        .alphaBox{
+            display:flexbox;
+            flex-direction: column nowrap;
+        }
+
+        h1{
+            font-size: 4em;
+        }
+                #titleItself {
+                color: ivory;
+                font-size: 2em;            
+                /* background-color: rgba(255 255 240 / .5); */
+                border-radius: 40px;
+            }
+
+        h3 {
+            font-size: 1.2rem;
+            color: ivory;
+        }
+        
+
+        #hatBox    {
+            display: inline-block;
+            flex: 1 1;
+            background-color: rgba(6 249 196 / .5);                
+            border-radius: 0px;
+            overflow: clip;            
+                    } #peaLogo {
+                        display: none;
+                        width: 20%;
+                        align-items: flex-start;
+                    }
+                    
+                    #titleRibbon {
+                        display: flex;
+                        flex-direction: column nowrap;
+                        justify-content: flex;
+                        background-color: rgba(6, 249, 196, 0);
+                        border-radius: 8rem;
+                        overflow: visible;
+                    } 
+                    #navaBar {
+                        display: grid;
+                        padding-top: 1.2%;
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        grid-column-gap: 0em;
+                        grid-row-gap: 0em;
+                        overflow: visible;
+                        justify-items: center;
+                        align-items:center;
+                        box-shadow: 2rem 6rem 0rem 18rem rgba(255 255 240 / .5);
+                                        }
+
+                                        #navaBar > h3 {
+                                            display: auto;
+                                            font-size: 1em;
+                                            font-weight: 900;
+                                            font-family: 'Montserrat';
+                                            align-self: center;
+                                            justify-self: center;
+                                            color: rgba(222, 184, 135, 0.350);
+                                            background: ivory;
+                                            border-radius: 25px;
+                                            margin-top: -20%;
+                                            overflow:visible;
+                                        }
+                        .svgRing{
+                            display: grid;
+                            outline: .2em double burlywood;
+                            border-radius: 50%;
+                            padding: .4em;
+                            align-items: center;
+                            justify-items: center;
+                            overflow:visible;
+                        }
+
+            #torsoBox {
+                    display:flex;
+                    box-sizing: border-box;
+                    flex-flow: column nowrap;
+                    /* min-height: 70dvh; */
+                    flex: 5 0;
+                    outline: .5em solid ivory;
+                    background-color:rgba(0 0 0 / .2);
+                    padding: 0px 0px 0px 0px;
+                    }
+                    #theConsole {
+                        display: flex;
+                        box-sizing: border-box;
+                        /* min-block-size: 8dvh;
+                        min-width: 99dvw; */
+                        flex: .5 0;
+                        background-color: rgba(4, 84, 37, 0.590);
+                        overflow: clip;
+                        outline: .8rem solid ivory;
+                        /* box-shadow: -1.63em 0em 1px 1.25em ivory; */
+                        border-radius: 20px;
+                        margin: 0px 0 15px 0;
+                    }
+                    #dominoBox {
+                        display:flexbox;
+                        box-sizing: border-box;
+                        /* min-block-size: 54vh;
+                        min-width: 99dvw; */
+                        flex: 4 0;
+                        /* background-color: rgba(169, 28, 28, 0.12); */
+                        background-color: rgba(8, 0, 255, 0.35);
+                        overflow: clip;
+                        outline: 1em solid ivory;
+                        border-radius: 20px;
+                        margin: 0%
+                    }                                                      
+                    #copyBox {
+                        display: flexbox;
+                        box-sizing: border-box;
+                        /* min-width: 99dvw;
+                        min-block-size: 10vh; */
+                        flex: .7 0;
+                        background-color: rgba(218, 211, 7, 0.350);
+                        overflow: clip;
+                        outline: 1em solid ivory;
+                        border-radius: 20px;
+                        margin: 15px 0 0 0;
+                        padding: 0%;
+                    }
+            #theunderBox {
+                display: block;
+                position: sticky;
+                /* max-height: 3.2em; */
+                flex: .5 1;
+                overflow: clip;
+                /* background-color: rgba(12, 4, 254, 0.350); */
+                background-color: rgba(169, 28, 28, 0.52);
+                justify-content: center;
+                align-content: start;
+                outline: 1em solid ivory;
+                border-radius: 10px;
+            }
+            #legalfooterButton {
+                
+            }
+
+
+    } 
+
+    /*wunderScribe JS - Javascript Wunderbachs Presets. The downloadable WunderScribe Javascript file (.js) must also be activated.*/
+
+    /* .pisceanPortal {
+        size: 1px;
+    } */
+
+
+
+
+
+    /* .magicWindow {
+    display: grid flex;
+    background-color: oldlace;
+
+    } */
+    /*=====================================exit Wunderbachs==============================================*/
