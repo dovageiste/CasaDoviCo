@@ -56,8 +56,8 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                             }
 
                             .betaBox {
-                                display:flexbox;
-                                flex: 1;
+                                display:flex;
+                                flex: 1 0 100%;
                                 flex-direction: row nowrap;
                                 padding: .5%;
                                 margin: .5em;
@@ -152,31 +152,24 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                             outline: 10px solid ivory;
 
                                                             }
-                                                            #theConsole {
-                                                                flex: 2 0;
-                                                                /* background-color: rgba(4, 84, 37, 0.590); */
-                                                                /* background-color:rgba(245 245 220 / 1);
-                                                                outline: .7em solid rgba(245 245 220 / 1); */
-                                                                /* background-color: rgba(60, 247, 206, 0.5); */
-                                                                overflow: clip;
-                                                                
-                                                                /* box-shadow: -1.63em 0em 1px 1.25em ivory; */
-                                                                margin: 0;
-                                                            }
+
                                                             #dominoBox {
                                                                 flex: 9 1;
-                                                                /* background-color: rgba(192, 0, 0, 0.450);
-                                                                background-color: rgba(60, 247, 206, 0.5); */
+                                                                /* /* background-color: rgba(192, 0, 0, 0.450); */
+                                                                /* background-color: rgba(60, 247, 206, 0.5); */
+                                                                outline: 10px solid ivory;
                                                                 overflow: clip;
+                                                                padding: 0%;
                                                                 
-                                                            }                                                      
-                                                            #copyBox {
-                                                                flex: 3 0;
-                                                                /* background-color: rgba(218, 211, 7, 0.350);
-                                                                background-color: rgba(60, 247, 206, 0.5); */
-                                                                overflow: clip;
-                                            
                                                             }
+                                                            
+                                                                    #miniMeta{
+                                                                        box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset;
+                                                                        outline: 10em solid ivory;
+                                                                        border-radius: 3em;
+                                                                        padding: 0%;
+                                                                        margin: 0%;
+                                                                    }
                                             #theunderBox {
                                                 display: flex;
                                                 flex: 1 1 10%;
