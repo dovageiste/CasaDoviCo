@@ -2,10 +2,18 @@
 /*dovageiste's etherBox Designer CSS API & Library ================================================*/
 
 /* general CSS Reset */
-html, 
+        *, 
+        html, 
         body {
             margin: 0%;
             padding: 0%;
+            box-sizing:border-box;
+        }
+
+/* 'Switch' to remove edited out elements, which may still be represented in HTML, or may be saved for later consideration. They will be removed entirely from the document's display. They are marked with class: */
+
+        .theHitList{
+            display:none;
         }
 
 
@@ -13,10 +21,9 @@ html,
 These are CSS parameters, by ID's and Classes, for all major HTML elements, grouped together by context. The list starts with editable abstract elements such as the 'body', to the 'etherBox' which is the invisible bed of the whole website, to its direct descendant, the 'metaBox', down to the alphaBox class of row-oriented major flexboxes, and so on. */
 
     body {
-        background-image: url('image/lorisha-buhler-ferrara-F-67aIbPOAc-unsplash.jpg');
-        background-size: 120%;
-        background-position-x: 60%;
-        background-position-y: 72%;
+        background-image: url('image/philippe-oursel-1TcROt1gu34-unsplash.jpg');
+        background-size: cover;
+        background-position-y: 87%;
             }*, body {
                 margin: 0;
                 padding: 0;
@@ -42,106 +49,146 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                         }
                             .alphaBox {
                                 display: flex;
+                                position: relative;
                                 flex-wrap: row wrap;
+                                /* padding: .5%;
+                                margin: .5em; */
+                            }
+
+                            .betaBox {
+                                display:flexbox;
+                                flex: 1;
+                                flex-direction: row nowrap;
                                 padding: .5%;
                                 margin: .5em;
                             }
-
-                            .kinderBox {
-                                display:flexbox;
-                                flex-direction: column nowrap;
-                                margin: 0 5px 0 5px;
-                                padding: .5%;
-
-                            }
-                                    .vocabox {
+                                    .kinderbox {
                                         display:block;
+                                        position: relative;
                                     }        
                                             #hatBox    {
                                                     display: flex;
-                                                    flex: 2 1.1;
+                                                    flex: 2 1 18%;
                                                     background-color: rgba(255, 255, 240, 0.8);
                                                     border-radius: 0px;
-                                                    overflow: clip;
-                                                    outline: 1em solid ivory;
-                                                    
-                                                            } #peaLogo {
+                                                    } 
+                                                            
+                                                            /* #peaLogo {
                                                                 display: none;
                                                                 width: 20%;
                                                                 align-items: flex-start;
-                                                            }
+                                                            } */
                                                             
                                                             #titleRibbon {
                                                                 display: flex;
-                                                                flex: 2 .5;
-                                                                justify-content: flex;
-                                                                background-color: rgba(6, 249, 196, 0.267);
-                                                                border-radius: 8rem;
-                                                                box-shadow: 30rem -0.5rem 0rem 35rem ivory;
-                                                                overflow: clip;
-                                                            } 
-                                                            #navaBar {
-                                                                margin-top: 1%;
-                                                                flex: 1.1 1.7;
-                                                                display: grid;
-                                                                grid-template-columns: repeat(5, 1fr);
-                                                                grid-template-rows: repeat(2, 1fr);
-                                                                grid-column-gap: 0em;
-                                                                grid-row-gap: 0em;
-                                                                border-radius: 8em;
-                                                                overflow: clip;
-                                                                justify-items: center;
-                                                                align-items:center;
-                                                                background-color: transparent;
-                                                                }
-                                                                .svgRing{
-                                                                    outline: .3em solid burlywood;
-                                                                    border-radius: 50%;
-                                                                    padding: .4em;
-                                                                    align-items: center;
-                                                                    justify-items: center;
-                                                                    overflow:visible;
-                                                                }
+                                                                border-radius: 3em;
+                                                                justify-content: flex-start;
+                                                                flex: 1 1;
+                                                                background-color: rgba(60, 247, 206, 0.5);
+                                                                box-shadow: 0rem -11.5em 0rem 12rem ivory;
+                                                                overflow: visible;
+                                                            }
+                                                            
+                                                                    #titleItself {
+                                                                        /* color: rgb(3, 255, 200); */
+                                                                        color: ivory;
+                                                                        /* background: linear-gradient(45deg, ivory, turquoise); */
+                                                                        flex: 2 0 40;
+                                                                        justify-content: flex-start;
+                                                                    }
+/* Disabled (+ collapsed) CSS starting on this line corresponds to disabled HTML for a first draft navbar, expected to be deleted in final draft.                                                                                                    /* #navaBar {
+                                                                                                        margin-top: 1%;
+                                                                                                        box-sizing: border-box;
+                                                                                                        flex: 1 1.7;
+                                                                                                        display: grid;
+                                                                                                        grid-template-columns: repeat(5, 1fr);
+                                                                                                        grid-template-rows: repeat(2, 1fr);
+                                                                                                        column-gap: 0em;
+                                                                                                        row-gap: 0em;
+                                                                                                        border-radius: 8em;
+                                                                                                        overflow: clip;
+                                                                                                        justify-items: center;
+                                                                                                        align-items:center;
+                                                                                                        background-color: transparent;
+                                                                                                        }
+                                                                                                        .svgRing{
+                                                                                                            outline: .3em solid burlywood;
+                                                                                                            border-radius: 50%;
+                                                                                                            padding: .4em;
+                                                                                                            align-items: center;
+                                                                                                            justify-items: center;
+                                                                                                            overflow:visible;
+                                                                                                        } 
+==========================================================================================================================================*/
+                                                                        #navaBar2 {
+                                                                            margin-top: 1%;
+                                                                            flex: .5;
+                                                                            display: grid;
+                                                                            grid-template-columns: repeat(4, 1fr);
+                                                                            grid-template-rows: repeat(2, 1fr);
+                                                                            grid-column-gap: 2.3em;
+                                                                            grid-row-gap: 0em;
+                                                                            overflow: visible;
+                                                                            justify-items: center;
+                                                                            align-items:center;
+                                                                            background-color: transparent;
+                                                                            }
 
-                                                    #torsoBox {
-                                                            display: flex;
-                                                            flex: 8 0;
-                                                            overflow: clip;
-                                                            outline: 1em solid ivory;
-                                                            }#theConsole {
+                                                                            #navaBar2 > H3{
+                                                                                color:ivory;
+                                                                            }
+                                                                            .svgRing2{
+                                                                                outline: .7em double ivory;
+                                                                                border-radius: 50%;
+                                                                                padding: .3em;
+                                                                                align-items: center;
+                                                                                justify-items: center;
+                                                                                overflow:visible;
+                                                                            }
+                                            #torsoBox {
+                                            display: flex;
+                                            flex: 7 0 70%;
+                                            overflow: clip;                        
+                                            outline: 10px solid ivory;
+
+                                                            }
+                                                            #theConsole {
                                                                 flex: 2 0;
-                                                                background-color: rgba(4, 84, 37, 0.590);
+                                                                /* background-color: rgba(4, 84, 37, 0.590); */
+                                                                /* background-color:rgba(245 245 220 / 1);
+                                                                outline: .7em solid rgba(245 245 220 / 1); */
+                                                                /* background-color: rgba(60, 247, 206, 0.5); */
                                                                 overflow: clip;
-                                                                outline: 1.7em solid ivory;
+                                                                
                                                                 /* box-shadow: -1.63em 0em 1px 1.25em ivory; */
-                                                                border-radius: 20px;
-                                                                margin: 0 1.5em 0em 0em;
+                                                                margin: 0;
                                                             }
                                                             #dominoBox {
                                                                 flex: 9 1;
-                                                                background-color: rgba(192, 0, 0, 0.350);
+                                                                /* background-color: rgba(192, 0, 0, 0.450);
+                                                                background-color: rgba(60, 247, 206, 0.5); */
                                                                 overflow: clip;
-                                                                outline: 1.5em solid ivory;
-                                                                border-radius: 20px;
+                                                                
                                                             }                                                      
                                                             #copyBox {
                                                                 flex: 3 0;
-                                                                background-color: rgba(218, 211, 7, 0.350);
+                                                                /* background-color: rgba(218, 211, 7, 0.350);
+                                                                background-color: rgba(60, 247, 206, 0.5); */
                                                                 overflow: clip;
-                                                                outline: 1.8em solid ivory;
-                                                                margin: 0 0em 0em 1.5em;
-                                                                border-radius: 20px;
+                                            
                                                             }
-                                                    #theunderBox {
-                                                        display: flex;
-                                                        flex: .8 1;
-                                                        overflow: clip;
-                                                        background-color: rgba(12, 4, 254, 0.350);
-                                                        justify-content: center;
-                                                        align-content: start;
-                                                        outline: 1.8em solid ivory;
-                                                        border-radius: 20px;
+                                            #theunderBox {
+                                                display: flex;
+                                                flex: 1 1 10%;
+                                                overflow: clip;
+                                                justify-content: center;
+                                                align-content: start;
                                                     }
+                                                                    #theunderSpan{
+                                                                        background-color: rgba(60, 247, 206, 0.5);
+                                                                        border-radius: 3em;
+                                                                        outline: 140px solid ivory;
+                                                                    }
                                                                                         #ourLegalities {
                                                                                             justify-content: bottom;
                                                                                             align-content: bottom;
@@ -155,9 +202,8 @@ h1 {
     font-size: 5.2em;
     align-self: center;
     justify-self: center;
-        } #titleItself {
-            color: ivory;
-        }
+    padding: 0 1em 0 1em;
+        } 
 
 h2 {
     display: inherit;
@@ -194,7 +240,6 @@ p1 {
     font-weight: 400;
     font-size: 2.5em;
     color: rgba(6 249 196 / .5);
-    padding: 1.2em;
     align-self: center;
     justify-self: center;
 }
@@ -204,8 +249,24 @@ p2 {
     font-weight: 400;
     font-size: 1.3em;
     color: rgba(41, 215, 178, 0.627);
-    padding: 1em;
-    margin-top: 0 em;
+    align-self: center;
+    justify-self: center;
+}
+
+p3 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.3em;
+    color: rgba(41, 215, 178, 0.627);
+    align-self: center;
+    justify-self: center;
+}
+
+p4{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1em;
+    color: rgba(179, 171, 31, 0.627);
     align-self: center;
     justify-self: center;
 }
@@ -231,12 +292,15 @@ p2 {
                 
         /*BUTTONS*===================================================================================*/
                             .button-rounded-hover {
-                                border: 0;
+                                outline: .2em inset burlywood;
                                 border-radius: 5000px;
                                 padding: 0.3rem 2rem;
                                 max-height:50%;
                                 text-transform: capitalize;
-                                position: relative;
+                                position: absolute;
+                                right: 105px;
+                                bottom:20px;
+                                position: 12% 15%;
                                 overflow: hidden;
                                 font-size: 1.2em;
                                 letter-spacing: 2px;
@@ -249,10 +313,7 @@ p2 {
                                 opacity: 0;
                                 content: "";
                                 position: absolute;
-                                top: 0px;
-                                bottom: 0px;
-                                left: 0px;
-                                right: 0px;
+                                /* object-position: 125% 175% ; */
                                 border-radius: inherit;
                                 background-color: ivory;
                                 transition: all 0.3s;
@@ -396,7 +457,6 @@ p2 {
 
             #torsoBox {
                     display:flex;
-                    box-sizing: border-box;
                     flex-flow: column nowrap;
                     /* min-height: 70dvh; */
                     flex: 5 0;
@@ -406,7 +466,6 @@ p2 {
                     }
                     #theConsole {
                         display: flex;
-                        box-sizing: border-box;
                         /* min-block-size: 8dvh;
                         min-width: 99dvw; */
                         flex: .5 0;
@@ -419,20 +478,18 @@ p2 {
                     }
                     #dominoBox {
                         display:flexbox;
-                        box-sizing: border-box;
                         /* min-block-size: 54vh;
                         min-width: 99dvw; */
                         flex: 4 0;
                         /* background-color: rgba(169, 28, 28, 0.12); */
                         background-color: rgba(8, 0, 255, 0.35);
                         overflow: clip;
-                        outline: 1em solid ivory;
+                        outline: 2em solid ivory;
                         border-radius: 20px;
                         margin: 0%
                     }                                                      
                     #copyBox {
                         display: flexbox;
-                        box-sizing: border-box;
                         /* min-width: 99dvw;
                         min-block-size: 10vh; */
                         flex: .7 0;
@@ -456,12 +513,10 @@ p2 {
                 outline: 1em solid ivory;
                 border-radius: 10px;
             }
-            #legalfooterButton {
-                
-            }
-
 
     } 
+
+        
 
     /*wunderScribe JS - Javascript Wunderbachs Presets. The downloadable WunderScribe Javascript file (.js) must also be activated.*/
 
