@@ -42,6 +42,7 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
 
                     #themetaBox {
                         height: 100dvh;
+                        max-width: 100dvw;
                         display: flex;
                         flex-direction: column;
                         background-color: rgba(0, 0, 0, 0.350);
@@ -49,26 +50,36 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                         }
                             .alphaBox {
                                 display: flex;
-                                position: relative;
-                                flex-wrap: row wrap;
-                                /* padding: .5%;
-                                margin: .5em; */
+                                margin: .2% .2% .2% .2%;
+                                flex-wrap: row nowrap;
                             }
 
                             .betaBox {
                                 display:flex;
                                 flex: 1 0 100%;
                                 flex-direction: row nowrap;
-                                padding: .5%;
-                                margin: .5em;
+                                /* padding: .5% 0% .5% 0%; */
+                                margin: .2% .2% .2% .2%;
                             }
                                     .kinderbox {
                                         display:block;
                                         position: relative;
                                     }        
-                                            #hatBox    {
+                                            
+                                    
+                                    /* .vocabox{
+                                        display:flex;
+                                        flex: 1 0 100%;
+                                        flex-direction:column nowrap;
+                                        text-align: left;
+                                        align-content:flex-start;
+                                    } */
+                                        
+                                        
+                                    #hatBox    {
                                                     display: flex;
-                                                    flex: 2 1 18%;
+                                                    flex: 1 .5;
+                                                    max-height: 18%;
                                                     background-color: rgba(255, 255, 240, 0.8);
                                                     border-radius: 0px;
                                                     } 
@@ -87,46 +98,25 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                                                 background-color: rgba(60, 247, 206, 0.5);
                                                                 box-shadow: 0rem -11.5em 0rem 12rem ivory;
                                                                 overflow: visible;
+                                                                
                                                             }
                                                             
                                                                     #titleItself {
                                                                         /* color: rgb(3, 255, 200); */
                                                                         color: ivory;
                                                                         /* background: linear-gradient(45deg, ivory, turquoise); */
-                                                                        flex: 2 0 40;
+                                                                        flex: 1 0 100;
                                                                         justify-content: flex-start;
+                                                                        margin-right: -.7em;
+                                                                        
                                                                     }
-/* Disabled (+ collapsed) CSS starting on this line corresponds to disabled HTML for a first draft navbar, expected to be deleted in final draft.                                                                                                    /* #navaBar {
-                                                                                                        margin-top: 1%;
-                                                                                                        box-sizing: border-box;
-                                                                                                        flex: 1 1.7;
-                                                                                                        display: grid;
-                                                                                                        grid-template-columns: repeat(5, 1fr);
-                                                                                                        grid-template-rows: repeat(2, 1fr);
-                                                                                                        column-gap: 0em;
-                                                                                                        row-gap: 0em;
-                                                                                                        border-radius: 8em;
-                                                                                                        overflow: clip;
-                                                                                                        justify-items: center;
-                                                                                                        align-items:center;
-                                                                                                        background-color: transparent;
-                                                                                                        }
-                                                                                                        .svgRing{
-                                                                                                            outline: .3em solid burlywood;
-                                                                                                            border-radius: 50%;
-                                                                                                            padding: .4em;
-                                                                                                            align-items: center;
-                                                                                                            justify-items: center;
-                                                                                                            overflow:visible;
-                                                                                                        } 
-==========================================================================================================================================*/
                                                                         #navaBar2 {
-                                                                            margin-top: 1%;
-                                                                            flex: .5;
+                                                                            margin-top: 1.7%;
+                                                                            flex: .4 0 30;
                                                                             display: grid;
                                                                             grid-template-columns: repeat(4, 1fr);
                                                                             grid-template-rows: repeat(2, 1fr);
-                                                                            grid-column-gap: 2.3em;
+                                                                            grid-column-gap: .3em;
                                                                             grid-row-gap: 0em;
                                                                             overflow: visible;
                                                                             justify-items: center;
@@ -134,52 +124,65 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                                                             background-color: transparent;
                                                                             }
 
-                                                                            #navaBar2 > H3{
+                                                                            #navaBar2 > H2{
                                                                                 color:ivory;
+                                                                                flex-wrap: nowrap;
+                                                                                margin-top: 1px;
+                                            
                                                                             }
                                                                             .svgRing2{
-                                                                                outline: .7em double ivory;
+                                                                                outline: 8px double ivory;
                                                                                 border-radius: 50%;
-                                                                                padding: .3em;
+                                                                                padding: 8px;
                                                                                 align-items: center;
                                                                                 justify-items: center;
                                                                                 overflow:visible;
+                                                                                box-shadow: 1px 4.5px 8px rgba(255, 231, 93, 0.879), 10px 2px 10em rgba(255 240 220 / .5);
                                                                             }
                                             #torsoBox {
-                                            display: flex;
-                                            flex: 7 0 70%;
-                                            overflow: clip;                        
-                                            outline: 10px solid ivory;
+                                            flex: 5 1;
+                                            overflow: clip;
+                                            min-width: 98;
+                                            max-width: 98;
+                                            /* box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset; */
+                                            /* outline: 10em solid ivory; */                      
+                                            outline: 8px solid ivory;
 
                                                             }
 
-                                                            #dominoBox {
+                                                            #dominionBox {
+                                                                flex: 1 1;
+                                                                /* /* background-color: rgba(192, 0, 0, 0.450); */
+                                                                /* background-color: rgba(6, 10, 118, 0.167); */
+                                                                /* outline: 10px solid ivory; */
+                                                                overflow: clip;
+                                                                border-radius: 1.5em;
+                                                                box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset;
+                                                                outline: 100px solid ivory;
+                                                                
+                                                            }
+
+                                                            #theConsole {
                                                                 flex: 9 1;
                                                                 /* /* background-color: rgba(192, 0, 0, 0.450); */
-                                                                /* background-color: rgba(60, 247, 206, 0.5); */
-                                                                outline: 10px solid ivory;
+                                                                /* background-color: rgba(6, 10, 118, 0.167); */
+                                                                /* outline: 10px solid ivory; */
                                                                 overflow: clip;
                                                                 padding: 0%;
                                                                 
                                                             }
-                                                            
-                                                                    #miniMeta{
-                                                                        box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset;
-                                                                        outline: 10em solid ivory;
-                                                                        border-radius: 3em;
-                                                                        padding: 0%;
-                                                                        margin: 0%;
-                                                                    }
+
                                             #theunderBox {
                                                 display: flex;
-                                                flex: 1 1 10%;
+                                                flex: .8 0;
                                                 overflow: clip;
                                                 justify-content: center;
                                                 align-content: start;
+                                                outline: 8px solid ivory;
                                                     }
                                                                     #theunderSpan{
                                                                         background-color: rgba(60, 247, 206, 0.5);
-                                                                        border-radius: 3em;
+                                                                        border-radius: 1.2em;
                                                                         outline: 140px solid ivory;
                                                                     }
                                                                                         #ourLegalities {
@@ -196,15 +199,18 @@ h1 {
     align-self: center;
     justify-self: center;
     padding: 0 1em 0 1em;
+    text-shadow: 0px -1.5px 0px rgba(255, 255, 255, 0.3), 1px 2px 2px rgb(255, 207, 145);
         } 
 
 h2 {
-    display: inherit;
+    display: flex;
+    font-size: 1.2em;
     font-weight: 500;
-    font-family: 'Monoton', 'fantasy';
-    font-size: 3.5em;
+    font-family: 'Train One';
     align-self: center;
     justify-self: center;
+    color: ivory;
+    text-shadow: 0px -1.5px 0px rgba(255, 255, 255, 0.3), 1px 2px 2px rgb(255, 207, 145);
 }
 
 h3 {
@@ -215,7 +221,7 @@ h3 {
     align-self: center;
     justify-self: center;
 }
-        #navaBar > h3 {
+        #navaBar > h2 {
             display: inherit;
             font-size: 1em;
             font-weight: 700;
@@ -225,7 +231,6 @@ h3 {
             color: burlywood;
             background: ivory;
             border-radius: 25px;
-            margin-top: -20%;
         }
 
 p1 {
@@ -260,8 +265,20 @@ p4{
     font-weight: 400;
     font-size: 1em;
     color: rgba(179, 171, 31, 0.627);
-    align-self: center;
-    justify-self: center;
+    
+}
+
+p5,
+#imaginationTag
+    {
+    font-family: 'Train One';
+    font-weight: 600;
+    font-size: 1em;
+    text-align: left;
+    color: ivory;
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-right: 2em;
 }
 
 /* Custom Theme Colors ===========================================================================*/
@@ -459,15 +476,12 @@ p4{
                     }
                     #theConsole {
                         display: flex;
-                        /* min-block-size: 8dvh;
-                        min-width: 99dvw; */
+                        min-block-size: 8dvh;
                         flex: .5 0;
                         background-color: rgba(4, 84, 37, 0.590);
                         overflow: clip;
                         outline: .8rem solid ivory;
-                        /* box-shadow: -1.63em 0em 1px 1.25em ivory; */
                         border-radius: 20px;
-                        margin: 0px 0 15px 0;
                     }
                     #dominoBox {
                         display:flexbox;
@@ -490,7 +504,6 @@ p4{
                         overflow: clip;
                         outline: 1em solid ivory;
                         border-radius: 20px;
-                        margin: 15px 0 0 0;
                         padding: 0%;
                     }
             #theunderBox {
