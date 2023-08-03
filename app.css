@@ -50,7 +50,7 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                         }
                             .alphaBox {
                                 display: flex;
-                                margin: .2% .2% .2% .2%;
+                                margin: .5% .5% .5% .5%;
                                 flex-wrap: row nowrap;
                             }
 
@@ -124,12 +124,6 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                                                             background-color: transparent;
                                                                             }
 
-                                                                            #navaBar2 > H2{
-                                                                                color:ivory;
-                                                                                flex-wrap: nowrap;
-                                                                                margin-top: 1px;
-                                            
-                                                                            }
                                                                             .svgRing2{
                                                                                 outline: 8px double ivory;
                                                                                 border-radius: 50%;
@@ -144,9 +138,9 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                             overflow: clip;
                                             min-width: 98;
                                             max-width: 98;
-                                            /* box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset; */
-                                            /* outline: 10em solid ivory; */                      
-                                            outline: 8px solid ivory;
+                                            box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset, 10em 0em 0em 1.2em ivory, -10em 0em 0em 1.2em ivory; 
+                                            border-radius: 1em;                      
+                                            outline: 15px solid ivory;
 
                                                             }
 
@@ -157,13 +151,13 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                                                 /* outline: 10px solid ivory; */
                                                                 overflow: clip;
                                                                 border-radius: 1.5em;
-                                                                box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset;
-                                                                outline: 100px solid ivory;
+                                                                /* box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset; */
+                                                                /* outline: 100px solid ivory; */
                                                                 
                                                             }
 
                                                             #theConsole {
-                                                                flex: 9 1;
+                                                                flex: 1 1;
                                                                 /* /* background-color: rgba(192, 0, 0, 0.450); */
                                                                 /* background-color: rgba(6, 10, 118, 0.167); */
                                                                 /* outline: 10px solid ivory; */
@@ -179,6 +173,7 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                                 justify-content: center;
                                                 align-content: start;
                                                 outline: 8px solid ivory;
+                                                box-shadow: 10em 0em 0em 1.2em ivory, -10em 0em 0em 1.2em ivory
                                                     }
                                                                     #theunderSpan{
                                                                         background-color: rgba(60, 247, 206, 0.5);
@@ -210,7 +205,10 @@ h2 {
     align-self: center;
     justify-self: center;
     color: ivory;
-    text-shadow: 0px -1.5px 0px rgba(255, 255, 255, 0.3), 1px 2px 2px rgb(255, 207, 145);
+text-shadow: 0px -1.5px 0px rgba(255, 255, 255, 0.3), 1px 2px 2px rgb(255, 207, 145);
+    border-radius: 20px;
+    padding: 5px 8px 5px 8px;
+    margin: 2px;
 }
 
 h3 {
@@ -220,18 +218,20 @@ h3 {
     font-family: 'Montserrat';
     align-self: center;
     justify-self: center;
+    background-color: ivory;
+    
 }
-        #navaBar > h2 {
-            display: inherit;
+        /* #navaBar > h2 {
+            display: flex;
             font-size: 1em;
             font-weight: 700;
             font-family: 'Montserrat';
             align-self: center;
             justify-self: center;
             color: burlywood;
-            background: ivory;
-            border-radius: 25px;
-        }
+            background-color: ivory;
+            border-radius: 25px;} */
+
 
 p1 {
     font-family: 'Montserrat';
