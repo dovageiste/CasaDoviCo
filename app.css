@@ -22,8 +22,9 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
 
     body {
         background-image: url('image/philippe-oursel-1TcROt1gu34-unsplash.jpg');
-        background-size: cover;
+        background-size: 110%;
         background-position-y: 87%;
+        background-position-x: -12em;
             }*, body {
                 margin: 0;
                 padding: 0;
@@ -40,6 +41,17 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
         max-height: 100dvh;
     }
 
+            #theFilter {
+                position:fixed;
+                z-index: 100;
+                top:0; 
+                left:0;
+                bottom:0; 
+                right:0;
+                background-color:rgba(214, 255, 65, 0.142);   
+                
+            }
+
                     #themetaBox {
                         height: 100dvh;
                         max-width: 100dvw;
@@ -50,7 +62,7 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                         }
                             .alphaBox {
                                 display: flex;
-                                margin: .5% .5% .5% .5%;
+                                margin: .3% .5% .3% .5%;
                                 flex-wrap: row nowrap;
                             }
 
@@ -82,6 +94,8 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                                     max-height: 18%;
                                                     background-color: rgba(255, 255, 240, 0.8);
                                                     border-radius: 0px;
+                                                    outline: 11px solid ivory;
+                                                    
                                                     } 
                                                             
                                                             /* #peaLogo {
@@ -92,7 +106,7 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                                             
                                                             #titleRibbon {
                                                                 display: flex;
-                                                                border-radius: 3em;
+                                                                border-radius: 1.2em;
                                                                 justify-content: flex-start;
                                                                 flex: 1 1;
                                                                 background-color: rgba(60, 247, 206, 0.5);
@@ -138,10 +152,24 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                             overflow: clip;
                                             min-width: 98;
                                             max-width: 98;
-                                            box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset, 10em 0em 0em 1.2em ivory, -10em 0em 0em 1.2em ivory; 
-                                            border-radius: 1em;                      
-                                            outline: 15px solid ivory;
+                                            outline: 1em solid ivory;
+                                            box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset; 
+                                            /* 10em 0em 0em 1.2em ivory, -8em 0em 0em 1.2em ivory;  */
+                                            border-radius: 1.2em;                      
+                                            /* outline: 1px solid ivory; */
 
+                                                            }
+
+                                                            #theConsole {
+                                                                flex: 1 1;
+                                                                /* /* background-color: rgba(192, 0, 0, 0.450); */
+                                                                /* background-color: rgba(6, 10, 118, 0.167); */
+                                                                /* outline: 10px solid ivory; */
+                                                                overflow: clip;
+                                                                margin: .8%;
+                                                                /* background-color: rgba(10, 212, 192, 0.50); */
+                                                                border-radius: 3em;
+                                                                
                                                             }
 
                                                             #dominionBox {
@@ -151,30 +179,97 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                                                 /* outline: 10px solid ivory; */
                                                                 overflow: clip;
                                                                 border-radius: 1.5em;
-                                                                /* box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset; */
+                                                                margin: .8%;
+                                                                /* box-shadow: 2rem 3.5em 30rem 3rem rgb(51, 112, 255) inset; */
                                                                 /* outline: 100px solid ivory; */
                                                                 
                                                             }
 
-                                                            #theConsole {
-                                                                flex: 1 1;
-                                                                /* /* background-color: rgba(192, 0, 0, 0.450); */
-                                                                /* background-color: rgba(6, 10, 118, 0.167); */
-                                                                /* outline: 10px solid ivory; */
-                                                                overflow: clip;
-                                                                padding: 0%;
-                                                                outline: 10px solid palegoldenrod;
+                                                            .dib {
+                                                                display: inline-block;
+                                                            }
+                                                            
+                                                            .h2 {
+                                                                height: 2rem;
                                                                 
                                                             }
+                                                            
+                                                            .link {
+                                                                text-decoration: none;
+                                                                transition: color .15s ease-in;
+                                                                border: 4px solid ivory;
+                                                                border-radius: 50%;
+                                                            }
+                                                            
+                                                            .link:link, .link:visited {
+                                                                transition: color .15s ease-in;
+                                                            }
+                                                            
+                                                            .link:hover {
+                                                                transition: color .15s ease-in;
+                                                            }
+                                                            
+                                                            .link:active {
+                                                                transition: color .15s ease-in;
+                                                            }
+                                                            
+                                                            .link:focus {
+                                                                transition: color .15s ease-in;
+                                                                outline: 1px dotted currentColor;
+                                                            }
+                                                            
+                                                            .w2 {
+                                                                width: 2rem;
+                                                            }
+                                                            
+                                                            .near-black {
+                                                                color: #111;
+                                                            }
+                                                            
+                                                            .hover-silver:hover {
+                                                                color: #999;
+                                                            }
+                                                            
+                                                            .hover-silver:focus {
+                                                                color: #999;
+                                                            }
+                                                            
+                                                            .pv4 {
+                                                                padding-top: 2rem;
+                                                                padding-bottom: 2rem;
+                                                            }
+                                                            
+                                                            .ph3 {
+                                                                padding-left: 1rem;
+                                                                padding-right: 1rem;
+                                                            }
+                                                            
+                                                            .mr3 {
+                                                                margin-right: 1rem;
+                                                            }
+                                                            
+                                                            .tc {
+                                                                text-align: center;
+                                                            }
+                                                            
+                                                            @media screen and (min-width: 30em) {
+                                                                .ph5-ns {
+                                                                    padding-left: 4rem;
+                                                                    padding-right: 4rem;
+                                                                }
+                                                            }
+                                                            
+
+                                                                            
 
                                             #theunderBox {
                                                 display: flex;
-                                                flex: .8 0;
+                                                flex: 1.5 0;
                                                 overflow: clip;
                                                 justify-content: center;
                                                 align-content: start;
-                                                outline: 8px solid ivory;
-                                                box-shadow: 10em 0em 0em 1.2em ivory, -10em 0em 0em 1.2em ivory
+                                                outline: .7em solid ivory;
+                                                /* box-shadow: 1em 0em 0em 1.2em ivory, -80em 1em 0em .8em ivory */
                                                     }
                                                                     #theunderSpan{
                                                                         background-color: rgba(60, 247, 206, 0.5);
@@ -191,11 +286,13 @@ h1 {
     display: flex;
     font-family: 'Monoton', 'fantasy';
     font-weight: 500;
-    font-size: 5.2em;
+    font-size: 5em;
     align-self: center;
     justify-self: center;
     padding: 0 1em 0 1em;
     text-shadow: 0px -1.5px 0px rgba(255, 255, 255, 0.3), 1px 2px 2px rgb(255, 207, 145);
+    /* background-color: rgba(31, 204, 57, 0.24); */
+    /* border-radius: 0em 3em 3em 0em; */
         } 
 
 h2 {
@@ -358,7 +455,7 @@ p5,
 
 
     /* Media Queries*/
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 780px) {
 
          html, 
         body {
