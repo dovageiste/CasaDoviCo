@@ -24,7 +24,7 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
         background-image: url('image/philippe-oursel-1TcROt1gu34-unsplash.jpg');
         background-size: 110%;
         background-position-y: 87%;
-        background-position-x: -12em;
+        background-position-x: 0em;
             }*, body {
                 margin: 0;
                 padding: 0;
@@ -40,17 +40,6 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
         min-height: 100dvh;
         max-height: 100dvh;
     }
-
-            #theFilter {
-                position:fixed;
-                z-index: 100;
-                top:0; 
-                left:0;
-                bottom:0; 
-                right:0;
-                background-color:rgba(214, 255, 65, 0.142);   
-                
-            }
 
                     #themetaBox {
                         height: 100dvh;
