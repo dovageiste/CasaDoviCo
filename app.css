@@ -49,22 +49,27 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                         background-color: rgba(0, 0, 0, 0.350);
                         flex-grow: 1;           
                         }
+
+                       
+
+
                             .alphaBox {
                                 display: flex;
                                 margin: .3% .5% .3% .5%;
-                                flex-wrap: row nowrap;
+                                flex-direction: row nowrap;
                             }
 
                             .betaBox {
                                 display:flex;
                                 flex: 1 0 100%;
-                                flex-direction: row nowrap;
+                                flex-direction: column nowrap;
                                 /* padding: .5% 0% .5% 0%; */
                                 margin: .2% .2% .2% .2%;
                             }
                                     .kinderbox {
-                                        display:block;
-                                        position: relative;
+                                        display:flex;
+                                        flex-flow: row nowrap;
+                                        padding: 1%;
                                     }        
                                             
                                     
@@ -142,111 +147,82 @@ These are CSS parameters, by ID's and Classes, for all major HTML elements, grou
                                             min-width: 98;
                                             max-width: 98;
                                             outline: 1em solid ivory;
-                                            box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset; 
-                                            /* 10em 0em 0em 1.2em ivory, -8em 0em 0em 1.2em ivory;  */
+                                            box-shadow: 2rem 3.5em 10rem 2rem rgb(51, 255, 180) inset, 10em 10em 30em 2em rgba(8, 73, 223, 0.8) inset; 
+                                            padding: 1%;
                                             border-radius: 1.2em;                      
-                                            /* outline: 1px solid ivory; */
 
                                                             }
 
                                                             #theConsole {
                                                                 flex: 1 1;
-                                                                /* /* background-color: rgba(192, 0, 0, 0.450); */
-                                                                /* background-color: rgba(6, 10, 118, 0.167); */
-                                                                /* outline: 10px solid ivory; */
+                                                                /* background-color: rgba(192, 0, 0, 0.450); */
+                                                                /* outline: 4px solid ivory; */
                                                                 overflow: clip;
-                                                                margin: .8%;
-                                                                /* background-color: rgba(10, 212, 192, 0.50); */
-                                                                border-radius: 3em;
+                                                                margin: .8% 2% .8% 2%;
+                                                                background-color: rgba(0, 0, 0, 0.203);
+                                                                border-radius: 1em;
+                                                                /* background-color: rgba(255 255 240 / .7); */
+                                                                
                                                                 
                                                             }
 
                                                             #dominionBox {
-                                                                flex: 5 1;
-                                                                /* /* background-color: rgba(192, 0, 0, 0.450); */
-                                                                /* background-color: rgba(6, 10, 118, 0.167); */
-                                                                /* outline: 10px solid ivory; */
+                                                                flex: 7 1;
+                                                                /* outline: 4px solid ivory; */
                                                                 overflow: clip;
                                                                 border-radius: 1.5em;
                                                                 margin: .8%;
-                                                                /* box-shadow: 2rem 3.5em 30rem 3rem rgb(51, 112, 255) inset; */
-                                                                /* outline: 100px solid ivory; */
-                                                                
+                                                                padding: .25%;
                                                             }
 
-                                                            .dib {
-                                                                display: inline-block;
-                                                            }
-                                                            
-                                                            .h2 {
-                                                                height: 2rem;
-                                                                
-                                                            }
-                                                            
-                                                            .link {
-                                                                text-decoration: none;
-                                                                transition: color .15s ease-in;
-                                                                border: 4px solid ivory;
-                                                                border-radius: 50%;
-                                                            }
-                                                            
-                                                            .link:link, .link:visited {
-                                                                transition: color .15s ease-in;
-                                                            }
-                                                            
-                                                            .link:hover {
-                                                                transition: color .15s ease-in;
-                                                            }
-                                                            
-                                                            .link:active {
-                                                                transition: color .15s ease-in;
-                                                            }
-                                                            
-                                                            .link:focus {
-                                                                transition: color .15s ease-in;
-                                                                outline: 1px dotted currentColor;
-                                                            }
-                                                            
-                                                            .w2 {
-                                                                width: 2rem;
-                                                            }
-                                                            
-                                                            .near-black {
-                                                                color: #111;
-                                                            }
-                                                            
-                                                            .hover-silver:hover {
-                                                                color: #999;
-                                                            }
-                                                            
-                                                            .hover-silver:focus {
-                                                                color: #999;
-                                                            }
-                                                            
-                                                            .pv4 {
-                                                                padding-top: 2rem;
-                                                                padding-bottom: 2rem;
-                                                            }
-                                                            
-                                                            .ph3 {
-                                                                padding-left: 1rem;
-                                                                padding-right: 1rem;
-                                                            }
-                                                            
-                                                            .mr3 {
-                                                                margin-right: 1rem;
-                                                            }
-                                                            
-                                                            .tc {
-                                                                text-align: center;
-                                                            }
-                                                            
-                                                            @media screen and (min-width: 30em) {
-                                                                .ph5-ns {
-                                                                    padding-left: 4rem;
-                                                                    padding-right: 4rem;
-                                                                }
-                                                            }
+                                                                    .submetaBox {
+                                                                        height: 100;
+                                                                        max-width: 100;
+                                                                        display: flex;
+                                                                        flex-direction: column;
+                                                                        background-color: rgba(6, 15, 151, 0.333);
+                                                                        
+                                                                        /* box-shadow: 1em 11em 15em 110em rgba(0 0 0 /.449);       */
+                                                                        }
+
+                                                                                    #theIndex{
+                                                                                        flex: 1 1;
+                                                                                        /* outline: 5px solid ivory; */
+                                                                                        padding: 1%;
+                                                                                        margin: 1%;
+
+                                                                                    }
+
+                                                                                    #cinePlex{
+                                                                                        flex: 4 1;
+                                                                                        /* outline: 5px solid ivory; */
+                                                                                        padding: 2%;
+                                                                                        margin: 1%;
+                                                                                        border-radius: 1em;
+                                                                                    }
+
+                                                                                                    #cineNava{
+                                                                                                        flex: 1.4 1;
+                                                                                                        background-color: rgba(255, 255, 24, 0.5);
+                                                                                                        /* outline: 4px solid ivory; */
+                                                                                                    }
+
+                                                                                                    #cineBox {
+                                                                                                        /* outline: 4px solid ivory; */
+                                                                                                        flex: 8 1;
+                                                                                                        background-color: rgba(62, 255, 210, 0.450);
+                                                                                                    }
+                                                                    
+                                                                                    /* #previewGallery{
+                                                                                        flex: 1 1;
+                                                                                        outline: 5px solid palegoldenrod;
+                                                                                    }
+                                                                                    #gallerySelf{
+                                                                                        flex: 1 1;
+                                                                                        outline: 5px solid palegoldenrod;
+                                                                                        background-color: aqua;
+                                                                                    } */
+
                                                             
 
                                                                             
